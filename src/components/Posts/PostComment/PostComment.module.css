@@ -1,0 +1,40 @@
+.postComment{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+}
+
+.postComment input,textarea{  
+  border: 3px solid black;
+  outline: none;
+  border-radius: .3em;
+  width: 40em;
+}
+
+.postComment input,textarea,button{
+    margin-bottom: 1em;
+}
+.postComment input{
+    min-height: 3em;
+}
+
+.postComment textarea{
+    min-height: 5em;
+}
+.postComment button{
+    align-self: center;
+}
+
+
+
+.Comment{
+  display: flex;
+  justify-content: space-between;
+}
+.Comment p {
+    width: 40em;
+}
+
+
+
+

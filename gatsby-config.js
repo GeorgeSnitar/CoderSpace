@@ -1,7 +1,8 @@
+
 module.exports = {
   siteMetadata: {
-    title: ``,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Coder Space`,
+    description: `This site for beginner Front-end developer and just my own blog. It will teach basic knowledge of programming `,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -25,16 +26,10 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+       // This path is relative to the root of the site.
       },
     },
     `gatsby-transformer-remark`,
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -42,6 +37,13 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: '7cpjqtqir591',
+        accessToken: 'dsX0ZiKh3Vj_3MCXUOnbavx59jM4ZHaxujmQ-DjFFqQ',
+      },
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

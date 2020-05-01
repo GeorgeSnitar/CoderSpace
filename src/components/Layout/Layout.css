@@ -1,3 +1,4 @@
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -42,6 +43,11 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+}
+a{
+  background-image: none;
+  text-shadow: none;
+  text-decoration: none;
 }
 a:active,
 a:hover {
@@ -183,6 +189,9 @@ textarea {
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   font: inherit;
+}
+textarea{
+  outline: none;
 }
 html {
   font: 112.5%/1.45em georgia, serif;
@@ -376,6 +385,10 @@ dd {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
+
+
+
+
 p {
   margin-left: 0;
   margin-right: 0;

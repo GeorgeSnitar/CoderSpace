@@ -1,0 +1,41 @@
+
+img{
+    margin: 0;
+}
+
+button{
+    border-radius: 1em;
+    background-color: black;
+    outline: none;
+    border-style: none;
+    min-height: 2em;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+    padding: 0 1em 0 1em;
+}
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+  }
+
+.post{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.post a, textarea, input, label,button{
+    font: 500 .85em "Source Sans Pro", sans-serif;
+}
+
+.post img{
+    width: 900px;
+    height: 480px;
+}
+
+
+
+
+

@@ -1,0 +1,41 @@
+
+
+.headerClass{
+    background: black;
+    margin-bottom: 1rem;
+}
+.headerDiv, .headerNav{
+    display: flex;
+}
+.headerDiv{
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: 960px;
+    padding: 1.45rem 1.0875rem;
+}
+
+@font-face {
+    font-family: "Blinker";
+    src: url('https://fonts.googleapis.com/css2?family=Blinker&family=Goudy+Bookletter+1911&display=swap');
+  }
+
+.headerNav a{
+    color: white;
+    align-self: flex-end;
+    margin: 0 2.5em 0 2.5em;
+    font: 600 17px 'Blinker', sans-serif;
+}
+
+.headerDiv img{
+    align-self: center;
+    height: 35px;
+    margin-bottom: 0;
+}
+
+
+.headerTopText{
+    margin: 0;
+    color: white; 
+    cursor: pointer;
+}
+
