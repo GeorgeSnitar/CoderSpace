@@ -1,5 +1,5 @@
 import React from 'react';
-import PostComment from './PostComment/PostComment';
+import PostComment from '../PostComment/PostComment';
 import p from './Post.module.css';
 
 class Post extends React.Component {
@@ -11,9 +11,9 @@ class Post extends React.Component {
     render() {
         return (
             <div className={p.post}>
-                <h1>{this.props.title}</h1>
+                <h1>{this.props.postTitle}</h1>
                 <p>{this.props.postText}</p>
-                <img src={this.props.image} />
+                <img src={this.props.postImage} />
                 <PostComment />
             </div>
         )

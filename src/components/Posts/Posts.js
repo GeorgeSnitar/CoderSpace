@@ -1,31 +1,20 @@
 import React from 'react';
-import Post from './Post';
-import { StaticQuery, graphql} from 'gatsby';
+import PostViewContainer from './PostView/PostViewContainer';
+import { Link } from "gatsby";
 
-const Posts = () => (
-    <StaticQuery query={graphql`
-    query MyQuery {
-      contentfulPosts {
-        postTitleText
-        postImage {
-          resolutions {
-            src
-          }
-        }
-        postText {
-          postText
-        }
-      }
-    }
-    
- `}
-    render={data => (
-        <Post title={data.contentfulPosts.postTitleText}
-         postText={data.contentfulPosts.postText.postText}
-        image={data.contentfulPosts.postImage.resolutions.src}/>
-    )}
-    />
- ) 
+const Posts = (props) =>  {
+
+  
+    return (
+      <div>
+        <Link to="/jamstack/"><PostViewContainer viewSlice={0}/></Link>
+        <Link to="/graphql/"><PostViewContainer viewSlice={2}/></Link>
+        <Link to="/python/"><PostViewContainer viewSlice={1}/></Link>
+      </div>
+    )
+  
+
+}
 
 
 export default Posts;
