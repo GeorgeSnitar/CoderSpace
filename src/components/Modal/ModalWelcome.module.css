@@ -1,0 +1,24 @@
+.modalWelcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+    width: 920px;
+    height: 81vh;
+    background: content-box rgb(41, 39, 39, .7);
+}
+
+
+.modalWelcome img{
+    width: 700px;
+}
+
+
+.modalWelcome h1{
+    color: rgba(255, 255, 255, 0.801);
+}
+
+.modalWelcome button:hover{
+    background-color: white;
+    color: black;
+}

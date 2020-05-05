@@ -1,4 +1,9 @@
 
+@font-face {
+  font-family: "Blinker";
+  src: url('https://fonts.googleapis.com/css2?family=Blinker&family=Goudy+Bookletter+1911&display=swap');
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -342,7 +347,7 @@ hgroup {
   margin-bottom: 1.45rem;
 }
 ul {
-  margin-left: 1.45rem;
+  margin-left: 0;
   margin-right: 0;
   margin-top: 0;
   padding-bottom: 0;
@@ -398,7 +403,10 @@ p {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 0;
+  font-family: "Blinker";
+  font-weight: 500;
+  font-size: 19px;
 }
 figure {
   margin-left: 0;

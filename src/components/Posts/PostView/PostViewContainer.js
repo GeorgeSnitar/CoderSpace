@@ -39,11 +39,11 @@ const PostViewContainer = (props) => {
   }
   
   return (
-   <div>
+   <>
      <ul>
        {ViewSlicer(props.viewSlice)}
      </ul>
-   </div>
+   </>
   )
 }
 

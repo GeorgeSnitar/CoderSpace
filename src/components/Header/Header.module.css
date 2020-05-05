@@ -14,20 +14,53 @@
     padding: 1.45rem 1.0875rem;
 }
 
-@font-face {
-    font-family: "Blinker";
-    src: url('https://fonts.googleapis.com/css2?family=Blinker&family=Goudy+Bookletter+1911&display=swap');
-  }
+
 
 .headerNav a{
+    position: relative;
     color: white;
     align-self: flex-end;
     margin: 0 2.5em 0 2.5em;
     font: 600 17px 'Blinker', sans-serif;
+    border-bottom: 0px solid white;
 }
 
-.headerDiv img{
+.headerNav a:before{
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    background: #fff;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    left: 50%;
+    bottom: 0;
+}
+
+.headerNav a:after {
+	display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: #fff;
+    transition: width 0.3s ease-in-out;
+    left: 50%;
+    bottom: 0;/*задаём время анимации*/
+}
+
+.headerNav a:hover:before {
+    width: 50%;
+    left: 0;
+}
+
+.headerNav a:hover:after {
+    width: 50%;
+}
+
+.headerInst{
     align-self: center;
+    cursor: pointer;
     height: 35px;
     margin-bottom: 0;
 }

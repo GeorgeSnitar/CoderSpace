@@ -37,7 +37,7 @@ query{
             <Link to='/aboutme'>ABOUT</Link>
           </div>
 
-          <img src={data.contentfulLanguage.image.resolutions.src} />
+          <a href="https://www.instagram.com/" className={style.headerInst}><img src={data.contentfulLanguage.image.resolutions.src} /></a>
         </div>
       </header >
     )}
