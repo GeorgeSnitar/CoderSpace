@@ -43,7 +43,8 @@ module.exports = {
         spaceId: '7cpjqtqir591',
         accessToken: 'dsX0ZiKh3Vj_3MCXUOnbavx59jM4ZHaxujmQ-DjFFqQ',
       },
-    }
+    },
+    
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

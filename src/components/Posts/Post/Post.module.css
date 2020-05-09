@@ -24,6 +24,8 @@ button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1.45em 0 1.45em 0;
+    background-color: rgba(187, 187, 187, 0.76);  
 }
 
 .post a, textarea, input, label,button{
@@ -33,6 +35,17 @@ button{
 .post img{
     width: 800px;
     height: 450px;
+}
+
+.postText{
+    width: 45em;
+    margin-bottom: 1.45em;
+    color: rgb(53, 53, 53);
+}
+
+.postText h1{
+    text-decoration: underline;
+  text-decoration-color: black;
 }
 
 

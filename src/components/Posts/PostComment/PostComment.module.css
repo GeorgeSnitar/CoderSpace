@@ -5,7 +5,7 @@
 }
 
 .postComment input,textarea{  
-  border: 3px solid black;
+  border:1px solid rgb(194, 192, 192);
   outline: none;
   border-radius: .3em;
   width: 40em;

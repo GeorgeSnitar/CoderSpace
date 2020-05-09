@@ -1,0 +1,7 @@
+.postContainer{
+ border: 0;
+}
+
+.postContainer li{
+    margin-bottom: 0;
+}

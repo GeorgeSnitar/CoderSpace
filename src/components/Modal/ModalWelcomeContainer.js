@@ -11,17 +11,25 @@ class ModalWelcomeContainer extends React.Component {
     }
 
     componentDidMount(){
-         this.setState(state => ({ isModal: !state.isModal }))
+        this.modal = setTimeout(() => this.showModal(), 2000)
     }
-
-    hideModal = () => {
+     
+    showModal = () => {
         this.setState(state => ({ isModal: !state.isModal}))
     }
-  
 
+     hideModal = () =>{
+         this.showModal();
+     }
+    
+       
+    
+   
+  
+    
     render() {
         return (
-            <div style={{position: "absolute", zIndex: 2}}>
+            <div style={{position: "absolute", zIndex: 2}} >
                 {this.state.isModal && <ModalWelcome onClose={this.hideModal} />}
             </div>
         )

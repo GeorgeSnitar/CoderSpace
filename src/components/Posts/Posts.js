@@ -7,9 +7,9 @@ const Posts = () =>  {
   
     return (
       <>
-        <Link to="/jamstack/"><PostViewContainer viewSlice={0}/></Link>
-        <Link to="/graphql/"><PostViewContainer viewSlice={2}/></Link>
-        <Link to="/python/"><PostViewContainer viewSlice={1}/></Link>
+        <Link to="/jamstack/"><PostViewContainer viewSlice={2}/></Link>
+        <Link to="/graphql/"><PostViewContainer viewSlice={1}/></Link>
+        <Link to="/python/"><PostViewContainer viewSlice={0}/></Link>
       </>
     )
   

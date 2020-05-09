@@ -1,11 +1,11 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import style from './Header.module.css'
-import { StaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import React from "react"
 
-const Header = () => (
-  <StaticQuery query={graphql`
+const Header = (props) => {
+  const data = useStaticQuery(graphql`
 query{
   site {
     siteMetadata {
@@ -21,11 +21,12 @@ query{
     }
   }
 }  
-`}
-
-    render={data => (
+`
+  )
+    return(
       <header className={style.headerClass} >
         <div className={style.headerDiv}>
+ 
           <Link to='/'>
             <h1 className={style.headerTopText}>
               {data.site.siteMetadata.title}
@@ -40,11 +41,10 @@ query{
           <a href="https://www.instagram.com/" className={style.headerInst}><img src={data.contentfulLanguage.image.resolutions.src} /></a>
         </div>
       </header >
-    )}
-  />
-)
+      
+     )
 
-
+    }
 
 
 Header.propTypes = {

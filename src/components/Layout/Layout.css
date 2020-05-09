@@ -13,7 +13,8 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+   height: 100%;
+  }
 article,
 aside,
 details,
@@ -201,7 +202,7 @@ textarea{
 html {
   font: 112.5%/1.45em georgia, serif;
   box-sizing: border-box;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 * {
   box-sizing: inherit;
@@ -354,7 +355,7 @@ ul {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin: 0;
   list-style-position: outside;
   list-style-image: none;
   list-style: none;
@@ -531,7 +532,7 @@ th {
   font-weight: bold;
 }
 li {
-  margin-bottom: calc(1.45rem / 2);
+  margin-bottom: 1.45em;
 }
 ol li {
   padding-left: 0;

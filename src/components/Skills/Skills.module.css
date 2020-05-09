@@ -1,0 +1,25 @@
+.skillsConteiner{
+    display: flex;
+    flex-direction: column;
+    width: 23em;
+}
+.skillsConteiner ul li{
+    border-bottom: 1px solid black;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    margin-bottom: 0;
+    font-family: "Blinker";
+}
+
+.skillsConteiner ul li:hover{
+    background-color: #fff;
+    color: black;
+    text-decoration: underline;
+}
+
+.skills{
+    border: 2px solid black;
+    border-radius: 3px;
+    height: 7.7em;
+}

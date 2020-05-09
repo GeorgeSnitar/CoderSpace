@@ -1,6 +1,6 @@
 import React from 'react';
 import PostComment from '../PostComment/PostComment';
-import p from './Post.module.css';
+import style from './Post.module.css';
 
 class Post extends React.Component {
     constructor(props) {
@@ -10,9 +10,11 @@ class Post extends React.Component {
 
     render() {
         return (
-            <div className={p.post}>
-                <h1>{this.props.postTitle}</h1>
-                <p>{this.props.postText}</p>
+            <div className={style.post}>
+                <div className={style.postText}>
+                    <h1>{this.props.postTitle}</h1>
+                    <p>{this.props.postText}</p>
+                </div>
                 <img src={this.props.postImage} />
                 <PostComment />
             </div>
